@@ -26,10 +26,10 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-2">
             Why Choose Greenwings Ultimate Limited?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -54,15 +54,15 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-2">
             Ready to Incorporate Your Business?
           </h3>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 px-4">
             Join 817+ successful businesses that trust us with their incorporation needs.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="font-semibold text-lg">Excellence</div>
               <div className="text-sm text-white/80">We strive for excellence in all our services and client interactions</div>

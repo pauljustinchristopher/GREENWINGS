@@ -31,10 +31,10 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-2">
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -81,20 +81,20 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-2">
             Start Your Business Today
           </h3>
-          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-2xl mx-auto px-4">
             We look forward to helping you incorporate your business, with our branding and printing services, 
             and achieve your entrepreneurial goals.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Button 
               variant="hero" 
               size="lg" 
-              className="text-lg px-8 py-4"
+              className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
               onClick={() => window.open('https://wa.me/2348085516053', '_blank')}
             >
               Get Started on WhatsApp
@@ -102,7 +102,7 @@ const Contact = () => {
             <Button 
               variant="outline-light" 
               size="lg" 
-              className="text-lg px-8 py-4"
+              className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
               onClick={() => window.location.href = 'tel:08085516053'}
             >
               Call Us Now

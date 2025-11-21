@@ -3,10 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Founder = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-2">
             Meet Our Founder
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -16,9 +16,9 @@ const Founder = () => {
 
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-elegant">
-            <CardContent className="p-8 md:p-12">
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="w-48 h-48 bg-gradient-primary rounded-full flex items-center justify-center text-white text-6xl font-bold">
+            <CardContent className="p-6 sm:p-8 md:p-12">
+              <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl sm:text-5xl md:text-6xl font-bold flex-shrink-0">
                   OO
                 </div>
                 
