@@ -23,26 +23,26 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center text-white font-bold text-lg mr-3">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md">
               G
             </div>
-            <div>
-              <div className="font-bold text-lg text-primary">Greenwings Ultimate</div>
-              <div className="text-xs text-muted-foreground hidden sm:block">Business Solutions</div>
+            <div className="flex flex-col">
+              <div className="font-bold text-xl text-primary leading-tight">Greenwings Ultimate</div>
+              <div className="text-xs text-muted-foreground">Business Solutions</div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                className="text-muted-foreground hover:text-primary transition-colors font-medium text-base"
               >
                 {item.label}
               </button>
@@ -50,17 +50,18 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center gap-3">
             <Button 
               variant="outline" 
-              size="sm"
+              size="default"
               onClick={() => window.location.href = 'tel:08085516053'}
+              className="flex items-center gap-2"
             >
-              <Phone className="w-4 h-4 mr-2" />
+              <Phone className="w-4 h-4" />
               Call Now
             </Button>
             <Button 
-              size="sm"
+              size="default"
               onClick={() => window.open('https://wa.me/2348085516053', '_blank')}
             >
               Get Started
@@ -69,8 +70,9 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -78,7 +80,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t bg-white">
+          <div className="lg:hidden border-t bg-white">
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button
